@@ -20,7 +20,7 @@ module.exports = {
             .resize(500)
             .jpeg({quality: 70})
             .toFile(
-                path.resolve(req.file.destination, 'resized', image)
+                path.resolve(req.file.destination, 'resized', fileName)
             )
 
         const post = await Post.create({
