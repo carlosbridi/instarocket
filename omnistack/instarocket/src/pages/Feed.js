@@ -81,15 +81,14 @@ export default class Feed extends Component {
                   <TouchableOpacity style={styles.action} onPress={() => {}}>
                     <Image source={send} />
                   </TouchableOpacity>
-
+                  </View>
                   <Text style={styles.likes}>{item.likes} curtidas</Text>
                   <Text style={styles.description}>{item.description}</Text>
                   <Text style={styles.hashtags}>{item.hashtags}</Text>
                 </View>
               </View>
-            </View>
-          )}        
-        />
+              )}        
+              />
       </View>
     );
   }
@@ -125,7 +124,6 @@ const styles = StyleSheet.create({
 
   feedItemFooter: {
     paddingHorizontal: 15,
-
   },
 
   actions: {
